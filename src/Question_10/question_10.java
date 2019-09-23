@@ -13,9 +13,14 @@ public class question_10 {
 
     static void numberConsists(int n) {  //Cформирован массив, элементами которого являются цифры числа N.
         int a[] = new int[n];
-        for (int i = 0; i < n; i++) {
-            a[i] = n / n + i;
+        int i = 0;
+        System.out.println("Numbers included in the number "+n+":");
+        while(n!=0){
+            i++;
+            a[i]=n%10;
+            n=n/10;
+            System.out.println(a[i]);
         }
-        System.out.println("The number "+n+" includes the following numbers: " + Arrays.toString(a));
+
     }
 }
