@@ -11,7 +11,7 @@ public class question_10 {
     }
 
 
-    static void numberConsists(int n) {  //Caормирован массив, элементами которого являются цифры числа N.
+    static void numberConsists(int n) {  //Cформирован массив, элементами которого являются цифры числа N.
         int a[] = new int[n];
         for (int i = 0; i < n; i++) {
             a[i] = n / n + i;
